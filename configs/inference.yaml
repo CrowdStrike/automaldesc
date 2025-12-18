@@ -1,0 +1,16 @@
+inputs: "test-metadata.parquet"
+prompt: "./prompts/training.jinja"
+
+model: "meta-llama/Llama-3.3-70B-Instruct"
+lora: "models/annotator-v1"
+tokenizer: "models/annotator-v1"
+chat_template: true
+
+bs: 8
+sampling_params:
+  max_tokens: 512
+
+joblog: "joblog.jsonl"
+out_joblog: "joblog.jsonl"
+out_frame: "out.jsonl"
+out_log: "log.txt"

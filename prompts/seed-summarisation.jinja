@@ -1,0 +1,61 @@
+Analyze this {{ language }} script and provide your assessment in 3-4 paragraphs:
+
+<code>
+{{ path|read_file -}}
+</code>
+
+Script information:
+- Classification: {{ 'Malicious' if label == 1 else 'Clean' }}
+{% if malicious_behaviours|length > 0 -%}
+- Malicious behaviours: {{ malicious_behaviours|map(attribute='name')|join(', ') }}
+{% endif -%}
+{% if suspicious_behaviours|length > 0 -%}
+- Suspicious behaviours: {{ suspicious_behaviours|map(attribute='name')|join(', ') }}
+{% endif -%}
+
+IMPORTANT: The classification label provided above is 100% accurate and trustworthy. Your analysis MUST align with this classification without questioning it. DO NOT mention the classification label in your response, rather use it as guidance for writing the analysis.
+
+Write a fluid technical analysis (3-4 paragraphs, 200-250 words total) that covers the following aspects:
+
+For CLEAN scripts:
+    - Focus on the legitimate purpose and operational context
+    - Describe the intended functionality proportionate to the script's complexity
+    - Do not search for malicious intent where none exists
+    - Accept that some scripts may have simple purposes and/or limited functionality
+
+For MALICIOUS scripts:
+
+    Attack identification and core functionality:
+    - Identify the specific attack type/technique using proper cybersecurity terminology
+    - State the primary purpose of the script and its intended outcome
+    - Describe how the attack works, including payload delivery methods, execution techniques, and objectives
+
+    Technical execution flow:
+   - Detailed step-by-step explanation of how the script operates
+   - If present, ALWAYS include specific commands, flags, parameters, protocols, ports, or services leveraged in the script
+   - Explicitly name relevant and core functions, methods and commands used (e.g. "-w- hidden" flag, "port 443", "eval() function", etc.)
+   - Explain key technical mechanisms enabling the attack (API calls, encoding/encryption, or memory manipulation)
+   - Shortly describe the relevant functions/commands enabling the script's behavior with their parameters
+
+    System impact and security implications:
+   - Specific system resources affected (filesystem, registry, memory, network)
+   - Describe any persistence mechanisms or privilege escalation techniques
+   - If present, detail any obfuscation techniques or evasion methods
+   - Explain potential data impact (exfiltration, corruption, encryption, etc.)
+
+Avoid formulaic structures or repetitive phrases.
+Each paragraph should flow naturally while still covering all technical aspects.
+
+Formatting requirements:
+    - Use varied paragraph structures and opening sentences (don't always start with "The script's primary purpose...")
+    - DO NOT include code snippets, markdown formatting, or PIIs in your response
+    - DO NOT repeat statements, each sentence must provide unique information
+    - DO NOT use standard introductions, conclusions, note or recommendations
+    - DO NOT include meta-commentary about the analysis itself
+    - DO NOT use hedging language or phrases of uncertainty (such as 'seems to', 'possibly', 'probable' etc.)
+    - DO NOT reference the classification label in the response as an argument (do not say "This script is classified as clean" or "This script is labeled as malicious")
+
+Write your analysis as a narrative with varied sentence structure.
+Each sentence should contribute unique information without repetition or uncertainty phrases.
+Prioritize precise technical details (command flags, known port numbers, core functions, etc.) over general security concerns.
+Each analysis should be unique in approach even for similar scripts.

@@ -1,0 +1,47 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: black
+        args: ["--check", "--diff", "--color"]
+        types: ["python"]
+        language: system
+        pass_filenames: true
+
+      - id: isort
+        name: isort
+        entry: isort
+        args: ["--check", "--diff"]
+        types: ["python"]
+        language: system
+        pass_filenames: true
+
+      - id: pylint
+        name: pylint
+        entry: pylint
+        types_or: ["python"]
+        language: system
+        pass_filenames: true
+
+      - id: mypy
+        name: mypy
+        entry: mypy
+        args: []
+        types_or: ["python"]
+        language: system
+        pass_filenames: true
+
+      - id: pyright
+        name: pyright
+        entry: pyright
+        args: ["."]
+        types_or: ["python"]
+        language: system
+        pass_filenames: true
+
+      - id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        pass_filenames: false

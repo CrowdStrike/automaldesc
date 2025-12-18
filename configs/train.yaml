@@ -1,0 +1,21 @@
+# Example configuration for a training run.
+
+# Our arguments.
+model: "meta-llama/Llama-3.3-70B-Instruct"
+train_dataset: "data/train.parquet"
+test_dataset: "data/test.parquet"
+attn_implementation: "flash_attention_2"
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: "all-linear"
+use_reentrant: True
+
+# SFTConfig
+output_dir: "./output"
+seed: 100
+packing: True
+max_seq_length: 16384
+num_train_epochs: 1
+ddp_timeout: 86400
+dataloader_num_workers: 24
