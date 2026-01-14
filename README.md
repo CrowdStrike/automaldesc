@@ -72,7 +72,7 @@ sbatch --nodes=2 ./scripts/train.slurm
 
 ## Data
 
-The data used in the article is available [on Zenodo](https://zenodo.org/records/18243456).
+The data set used in the article is available [on Zenodo](https://zenodo.org/records/18243456).
 
 ## Developing
 
