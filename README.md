@@ -72,7 +72,7 @@ sbatch --nodes=2 ./scripts/train.slurm
 
 ## Data
 
-The data used in the paper will be made available here.
+The data set used in the article is available [on Zenodo](https://zenodo.org/records/18243456).
 
 ## Developing
 
@@ -81,6 +81,22 @@ pre-commit hooks first:
 
 ```bash
 pre-commit install
+```
+
+## Citation
+
+You can cite the accompanying article as follows:
+
+```bibtex
+@misc{apostu2025automaldesclargescalescriptanalysis,
+      title={AutoMalDesc: Large-Scale Script Analysis for Cyber Threat Research},
+      author={Alexandru-Mihai Apostu and Andrei Preda and Alexandra Daniela Damir and Diana Bolocan and Radu Tudor Ionescu and Ioana Croitoru and Mihaela Găman},
+      year={2025},
+      eprint={2511.13333},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2511.13333},
+}
 ```
 
 ## Support statement
