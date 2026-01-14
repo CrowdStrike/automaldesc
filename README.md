@@ -72,7 +72,7 @@ sbatch --nodes=2 ./scripts/train.slurm
 
 ## Data
 
-The data used in the paper will be made available here.
+The data used in the article is available [on Zenodo](https://zenodo.org/records/18243456).
 
 ## Developing
 
@@ -85,7 +85,7 @@ pre-commit install
 
 ## Citation
 
-You can cite the original article as follows:
+You can cite the accompanying article as follows:
 
 ```bibtex
 @misc{apostu2025automaldesclargescalescriptanalysis,
