@@ -4,7 +4,7 @@
   <img alt="CrowdStrike Logo" src="docs/assets/cs-logo.png">
 </picture>
 
-[![Twitter URL](https://img.shields.io/twitter/url?label=Follow%20%40CrowdStrike\&style=social\&url=https%3A%2F%2Ftwitter.com%2FCrowdStrike)](https://twitter.com/CrowdStrike)
+[![CrowdStrike Subreddit](https://img.shields.io/badge/-r%2Fcrowdstrike-white?logo=reddit&labelColor=gray&link=https%3A%2F%2Freddit.com%2Fr%2Fcrowdstrike)](https://reddit.com/r/crowdstrike)
 
 * [Security Policy](#security-policy)
   * [Supported versions](#supported-versions)

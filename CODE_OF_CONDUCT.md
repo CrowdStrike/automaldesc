@@ -4,6 +4,8 @@
   <img alt="CrowdStrike Logo" src="docs/assets/cs-logo.png">
 </picture>
 
+[![CrowdStrike Subreddit](https://img.shields.io/badge/-r%2Fcrowdstrike-white?logo=reddit&labelColor=gray&link=https%3A%2F%2Freddit.com%2Fr%2Fcrowdstrike)](https://reddit.com/r/crowdstrike)
+
 # Community Code of Conduct
 
 ## Our Pledge
