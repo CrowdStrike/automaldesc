@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/cs-logo.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cs-logo-red.png">
+  <img alt="CrowdStrike Logo" src="docs/assets/cs-logo.png">
+</picture>
+
 # Community Code of Conduct
 
 ## Our Pledge

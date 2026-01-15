@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/cs-logo.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cs-logo-red.png">
+  <img alt="CrowdStrike Logo" src="docs/assets/cs-logo.png">
+</picture>
+
 [![Twitter URL](https://img.shields.io/twitter/url?label=Follow%20%40CrowdStrike\&style=social\&url=https%3A%2F%2Ftwitter.com%2FCrowdStrike)](https://twitter.com/CrowdStrike)
 
 * [Security Policy](#security-policy)
