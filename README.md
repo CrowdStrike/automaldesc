@@ -23,7 +23,7 @@ We recommend you create a virtual environment and install the library inside:
 uv venv --python 3.12
 source .venv/bin/activate
 uv pip install -e .
-uv pip install 'flash-attn==2.7.4.post1' --no-build-isolation
+uv pip install 'flash-attn==2.8.3' --no-build-isolation
 ```
 
 ## Hierarchy

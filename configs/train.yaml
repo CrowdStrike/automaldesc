@@ -19,3 +19,4 @@ max_seq_length: 16384
 num_train_epochs: 1
 ddp_timeout: 86400
 dataloader_num_workers: 24
+bf16: true
